@@ -153,12 +153,12 @@ void game() {
             length -= 1;
             height += 1;
         }
-        printf("\033[0d\033[2J");
+        printf("\033[0d\033[2J");  //очистка терминала
         field(x1, y1, z1, x2, y2, z2, length, height);
         show_scores(score1, score2);
         if (score1 == 21 || score2 == 21) {  //проверка условий победы
             key = 0;
-            printf("\033[0d\033[2J");
+            printf("\033[0d\033[2J");  //очистка терминала
             if (score1 == 21) {
                 printf("\n Congratulations for PLAYER 1\n");
             } else {
