@@ -165,7 +165,7 @@ void game() {
         if (score1 == 21 || score2 == 21) {  //проверка условий победы
             key = 0;
             endwin();
-            printw("\033[0d\033[2J");
+            printw("\033[0d\033[2J");  //очистка терминала
             if (score1 == 21) {
                 printf("\n Congratulations for PLAYER 1\n");
             } else {
